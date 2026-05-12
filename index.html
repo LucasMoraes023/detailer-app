@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<title>Detailer Lucas Moraes</title>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailer App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailer App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
 
 <style>
 body {
-<<<<<<< HEAD
   margin: 0;
   font-family: Arial;
   background: linear-gradient(135deg, #000000, #1a1a1a);
@@ -45,42 +62,19 @@ button {
   margin: 10px;
   border: none;
   border-radius: 8px;
-=======
-  background: black;
-  color: white;
-  font-family: Arial;
-  text-align: center;
-  padding: 20px;
-}
-h1 {
-  color: red;
-}
-input, select, button {
-  width: 80%;
-  padding: 12px;
-  margin: 10px;
-  border-radius: 10px;
-  border: none;
-}
-button {
->>>>>>> 061aa83 (add camera and IA assistant)
   background: red;
   color: white;
   font-weight: bold;
 }
-<<<<<<< HEAD
 
 .hidden {
   display: none;
 }
-=======
->>>>>>> 061aa83 (add camera and IA assistant)
 </style>
 </head>
 
 <body>
 
-<<<<<<< HEAD
 <div class="container">
 
 <img src="logo.png" class="logo">
@@ -109,10 +103,6 @@ button {
 <!-- APP -->
 <div id="app" class="hidden">
 
-=======
-<h1>DETAILER LUCAS MORAES</h1>
-
->>>>>>> 061aa83 (add camera and IA assistant)
 <p>
 Excelência em cuidado automotivo: acabamento padrão concessionária, polimento e vitrificação com agendamento exclusivo.
 </p>
@@ -120,7 +110,6 @@ Excelência em cuidado automotivo: acabamento padrão concessionária, polimento
 <input id="nome" placeholder="Seu nome">
 
 <select id="servico">
-<<<<<<< HEAD
 <option>Polimento</option>
 <option>Vitrificação</option>
 <option>Lavagem Completa</option>
@@ -225,33 +214,6 @@ function logout(){
 }
 
 // AGENDAR
-=======
-  <option>Polimento</option>
-  <option>Vitrificação</option>
-  <option>Lavagem Completa</option>
-</select>
-
-<select id="horario">
-  <option>08:00</option>
-  <option>09:00</option>
-  <option>10:00</option>
-  <option>11:00</option>
-  <option>13:00</option>
-  <option>14:00</option>
-  <option>15:00</option>
-  <option>16:00</option>
-</select>
-
-<button onclick="agendar()">Agendar</button>
-
-<script>
-/* 🔥 COLE SUA URL E KEY AQUI */
-const supabase = window.supabase.createClient(
-  "COLE_SUA_URL_AQUI",
-  "COLE_SUA_KEY_AQUI"
-);
-
->>>>>>> 061aa83 (add camera and IA assistant)
 async function agendar(){
   const nome = document.getElementById("nome").value;
   const servico = document.getElementById("servico").value;
@@ -267,23 +229,11 @@ async function agendar(){
     .insert([{ nome, servico, horario, status: "pendente" }]);
 
   if(error){
-<<<<<<< HEAD
     alert("Erro ao agendar: " + error.message);
   } else {
     alert("Agendado com sucesso!");
-=======
-    alert("Erro ao agendar");
-    console.log(error);
-  } else {
-    alert("Agendamento realizado com sucesso!");
->>>>>>> 061aa83 (add camera and IA assistant)
   }
-}
 </script>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 061aa83 (add camera and IA assistant)
