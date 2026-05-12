@@ -1,6 +1,11 @@
 const supabase = window.supabase.createClient(
+<<<<<<< HEAD
   "https://zmhwbnxnceibmdmntbhh.supabase.co",
   "sb_publishable_SARoClbz6SwUk1RHHWDHgw_SUxJAsPe"
+=======
+  "SUA_URL",
+  "SUA_KEY"
+>>>>>>> 061aa83 (add camera and IA assistant)
 );
 
 async function agendar(){
@@ -22,4 +27,8 @@ async function agendar(){
   } else {
     alert("Agendamento realizado com sucesso!");
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 061aa83 (add camera and IA assistant)
